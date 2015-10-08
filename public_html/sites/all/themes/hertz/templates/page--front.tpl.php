@@ -61,6 +61,11 @@
 		</div> <!-- / end homepage first block -->
 	<?php endif; ?>
 	</div>
+  <div class="homepage-content-header">
+    <h1>UNRTHDX.COM</h1>
+    <p>Model & Talent Management Agency</p>
+  </div>
+
   <div class="three-blocks">
     <div class="block-one"><span>Girls</span></div>
     <div class="block-two"><span>Guys</span></div>
@@ -72,7 +77,9 @@
 			<?php print render($page['homepage_content']); ?>
 		</div> <!-- / end homepage content block -->
 	<?php endif; ?>
+  hey
 	<div class="clear"></div>
 </div> <!-- /.container -->
 </div> <!-- /#content -->
+
 <?php include ($directory."/includes/footer.php"); ?>

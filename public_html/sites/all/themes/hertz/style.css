@@ -106,6 +106,18 @@ i { font-style: italic; }
 	margin-bottom: 1.5em;  
 	width: 100%; 
 }
+
+.homepage-content-header {
+    text-align:center;
+}
+.homepage-content-header h1 {
+    letter-spacing:5px;
+}
+.homepage-content-header p{
+    font-size: 30px;
+    color: #818181;
+    font-family: "Open Sans Condensed",sans-serif;
+}
 #main .content  th{
 	font-weight: bold;
 	padding: 10px 5px;
@@ -129,10 +141,11 @@ i { font-style: italic; }
     position: absolute;
     background: transparent linear-gradient(320deg, transparent 0%, #FFF 100%) repeat scroll 0% 0%;
     width: 200px;
-    font-size: 27px;
+    font-size: 2em;
     padding-left: 20px;
     top: 200px;
     bottom: 41px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
     color: #000;
 }
 .three-blocks div.block-one {
@@ -665,6 +678,9 @@ ul.pager .pager-current {
 	width: 300px;
 	float: left;
 	position: relative;
+}
+.footer-three img{
+    width:100px;
 }
 .footer-one img, .footer-two img, .footer-three img{
 	max-width: 300px;
