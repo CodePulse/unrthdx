@@ -112,6 +112,30 @@ i { font-style: italic; }
 	background: #2f3238;
 	border: 1px solid #505259;
 }
+.view-portfolio table td{
+    border:0 !important;
+}
+.view-portfolio ul{
+    padding:0 !important;
+}
+.view-portfolio a span:hover{
+    background: #aaa8a8;
+}
+.view-portfolio a span.model-name{
+    display: block;
+    padding: 0 0 0 38%;
+}
+.view-portfolio a .model-name-wrapper {
+    background: #eee;
+    width: 100%;
+    display: block;
+    font-size: 20px;
+    color: #000;
+    font-weight: bold;
+}
+.view-portfolio ul li{
+   list-style:none;
+}
 #main .content table td{
 	border: 1px solid #505259;
 	padding: 5px;
