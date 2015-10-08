@@ -125,6 +125,36 @@ i { font-style: italic; }
     display: block;
     padding: 0 0 0 38%;
 }
+.three-blocks div span {
+    position: absolute;
+    background: transparent linear-gradient(320deg, transparent 0%, #FFF 100%) repeat scroll 0% 0%;
+    width: 200px;
+    font-size: 27px;
+    padding-left: 20px;
+    top: 200px;
+    bottom: 41px;
+    color: #000;
+}
+.three-blocks div.block-one {
+background:url(/sites/all/themes/hertz/images/11-330x330.jpg) no-repeat;
+    position:relative;
+}
+.three-blocks div.block-two {
+    background:url(/sites/all/themes/hertz/images/hm-david-beckham-modern-essentials-spring-2015-0.jpg) no-repeat 0px 0px / 508px auto;
+position:relative;
+
+}
+.three-blocks div.block-three {
+    background:url(/sites/all/themes/hertz/images/image-480x464.jpg) no-repeat 0px -3px / 320px;
+    position:relative;
+
+}
+.three-blocks div {
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+    margin-right: 10px;
+}
 .view-portfolio a .model-name-wrapper {
     background: #eee;
     width: 100%;

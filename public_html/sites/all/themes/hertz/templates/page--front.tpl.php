@@ -61,6 +61,11 @@
 		</div> <!-- / end homepage first block -->
 	<?php endif; ?>
 	</div>
+  <div class="three-blocks">
+    <div class="block-one"><span>Girls</span></div>
+    <div class="block-two"><span>Guys</span></div>
+    <div class="block-three"><span>News</span></div>
+  </div>
 	<div class="clear"></div>
 		<?php if ($page['homepage_content']): ?><!-- / start homepage content block -->
 		<div class="full">
