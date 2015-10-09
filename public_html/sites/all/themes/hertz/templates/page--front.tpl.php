@@ -69,7 +69,7 @@
   <div class="three-blocks">
     <div class="block-one"><span>Girls</span></div>
     <div class="block-two"><span>Guys</span></div>
-    <div class="block-three"><span>News</span></div>
+   <a href="/press-media"><div class="block-three"><span>News</span></div></a>
   </div>
 	<div class="clear"></div>
 		<?php if ($page['homepage_content']): ?><!-- / start homepage content block -->
@@ -77,7 +77,6 @@
 			<?php print render($page['homepage_content']); ?>
 		</div> <!-- / end homepage content block -->
 	<?php endif; ?>
-  hey
 	<div class="clear"></div>
 </div> <!-- /.container -->
 </div> <!-- /#content -->

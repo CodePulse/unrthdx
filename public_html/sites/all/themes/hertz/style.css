@@ -588,11 +588,11 @@ ul.pager {
 	font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 ul.pager .pager-current {
-	background-color: #222;
-	color: #d33b3c;
+	background-color: #808080;
+	color: #fff;
 }
 .pager-item, .pager-next, .pager-last, .pager-previous, .pager-first {
-	background-color: #d33b3c;
+	background-color: #222;
 	color: #fff;
 }
 .pager-item a, .pager-next a, .pager-last a, .pager-previous a, .pager-first a{
