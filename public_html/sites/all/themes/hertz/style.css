@@ -550,7 +550,19 @@ ul.secondary a.active {
 	margin: 8px 0;
 }
 #main img {
-	max-width: 700px;
+	/*max-width: 700px;*/
+}
+.view-news h2 a:hover {
+    color:#2f3238
+}
+.view-news-category-block .views-row a{
+    color:#fff;
+}
+.view-news-category-block .views-row a:hover{
+    color:#2f3238
+}
+.view-news-category-block .views-row {
+    margin-bottom:10px;
 }
 
 #main footer {
@@ -665,10 +677,10 @@ ul.pager .pager-current {
 	width: 100%;
 }
 #footer a{
-	color: #d33b3c;
+	color: #fff;
 }
 #footer a:hover{
-	color: #ddd;
+	color: #585858;
 }
 #footer h2{
 	border-bottom: 1px solid #14181d;
