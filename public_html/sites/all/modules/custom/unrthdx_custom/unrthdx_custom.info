@@ -1,0 +1,5 @@
+name = Unrthdx module
+description = Custom module
+package = Unrthdx
+core = 7.x
+

@@ -83,13 +83,13 @@ img {
 }
 blockquote {
 	background-color: #2f3238;
-	border-left: 6px solid #d33b3c;
+	border-left: 6px solid #fff;
 	padding: 14px 14px 10px 14px;
 	margin: 10px 0px;
 }
 code, pre {
 	background-color: #2f3238;
-	border-left: 6px solid #d33b3c;
+	border-left: 6px solid #fff;
 	display: block;
 	padding-left: 20px;
 	margin: 10px 0;
@@ -124,18 +124,60 @@ i { font-style: italic; }
 	background: #2f3238;
 	border: 1px solid #505259;
 }
+.view-guys table td,
+.view-girls table td,
+.view-actors table td,
+.view-dancers table td,
+.view-models table td,
 .view-portfolio table td{
     border:0 !important;
 }
+.view-guys ul,
+.view-girls ul,
+.view-actors ul,
+.view-dancers ul,
+.view-models ul,
 .view-portfolio ul{
     padding:0 !important;
 }
+.view-guys a span:hover,
+.view-girls a span:hover,
+.view-actors a span:hover,
+.view-dancers a span:hover,
+.view-models a span:hover,
 .view-portfolio a span:hover{
     background: #aaa8a8;
 }
+.view-guys a span.model-name,
+.view-girls a span.model-name,
+.view-actors a span.model-name,
+.view-dancers a span.model-name,
+.view-models a span.model-name,
 .view-portfolio a span.model-name{
     display: block;
     padding: 0 0 0 38%;
+}
+.view-guys a .model-name-wrapper,
+.view-girls a .model-name-wrapper,
+.view-actors a .model-name-wrapper,
+.view-dancers a .model-name-wrapper,
+.view-models a .model-name-wrapper,
+.view-portfolio a .model-name-wrapper {
+    background: #eee;
+    width: 100%;
+    display: block;
+    font-size: 20px;
+    color: #000;
+    font-weight: bold;
+}
+
+.view-guys ul li,
+.view-girls ul li,
+.view-actors ul li,
+.view-dancers ul li,
+.view-models ul li,
+.view-portfolio ul li{
+    list-style:none;
 }
 .three-blocks div span {
     position: absolute;
@@ -168,17 +210,7 @@ position:relative;
     display: inline-block;
     margin-right: 10px;
 }
-.view-portfolio a .model-name-wrapper {
-    background: #eee;
-    width: 100%;
-    display: block;
-    font-size: 20px;
-    color: #000;
-    font-weight: bold;
-}
-.view-portfolio ul li{
-   list-style:none;
-}
+
 #main .content table td{
 	border: 1px solid #505259;
 	padding: 5px;
@@ -404,10 +436,23 @@ body.sidebar-second #sidebar-second {
 	margin:0 0 0 -1px; 
 	padding:0;
 	list-style: none;
-	border-bottom: 1px solid #d33b3c;
+	border-bottom: 1px solid #fff;
 	z-index: 110;
 }
-	
+.form-text, .form-textarea-wrapper textarea {
+    outline: medium none;
+    border: 0px none;
+    color: #fff;
+    background: #191919 none repeat scroll 0% 0%;
+    padding: 8px;
+    transition: background 0.3s ease-in-out 0s;
+    width: 100%;
+}
+.form-text:focus, .form-textarea-wrapper textarea:focus {
+    background: #303030 none repeat scroll 0% 0%;
+    border:1px solid #fff;
+    transition: border 0.3s ease-in-out 0s;
+}
 .navigation  ul ul li {
 	width: 170px; 
 	float: left; 
@@ -422,7 +467,7 @@ body.sidebar-second #sidebar-second {
 	display: block;  	/* Making sure a element covers whole li area */
 	padding: 4px 10px; 
 	text-decoration: none; /* No underline */
-	border-top: 1px solid #d33b3c;
+	border-top: 1px solid #fff;
 	text-transform: none;
 	font-size: 18px;
 }
@@ -866,5 +911,5 @@ ul.pager .pager-current {
 	font-size: 1.2em;
 }
 #edit-submit:hover, #edit-preview:hover, #edit-delete:hover, input.form-submit:hover{
-	color: #d33b3c;
+	color: #fff;
 }

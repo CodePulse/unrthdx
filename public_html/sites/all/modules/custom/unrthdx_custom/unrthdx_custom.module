@@ -1,0 +1,51 @@
+<?php
+
+/**
+ * @see hook_entity_presave()
+ */
+function unrthdx_custom_entity_presave($entity, $type) {
+
+  if ($type == 'entityform' && $entity->type == 'contact_us') {
+    drupal_mail('unrthdx_custom', 'contact_us', 'ben@codepulse.co.uk', language_default());
+    drupal_mail('unrthdx_custom', 'contact_us', 'haleyjackson66@yahoo.com', language_default());
+  }
+
+  if ($type == 'entityform' && $entity->type == 'talent_booking') {
+    drupal_mail('unrthdx_custom', 'talent_booking', 'ben@codepulse.co.uk', language_default());
+    drupal_mail('unrthdx_custom', 'talent_booking', 'haleyjackson66@yahoo.com', language_default());
+  }
+
+  if ($type == 'entityform' && $entity->type == 'join_unrthdx') {
+    drupal_mail('unrthdx_custom', 'join_unrthdx', 'ben@codepulse.co.uk', language_default());
+    drupal_mail('unrthdx_custom', 'join_unrthdx', 'haleyjackson66@yahoo.com', language_default());
+  }
+}
+
+/**
+ * @see hook_mail()
+ */
+function unrthdx_custom_mail($key, &$message, $params) {
+  global $base_url;
+  // To allow html in message body (i think)
+  $message['headers']['Content-Type'] = 'text/html; charset=UTF-8; format=flowed; delsp=yes';
+  switch ($key) {
+    case 'contact_us':
+      $message['subject'] = 'Unorthodox - New \'Contact Us\' Submission';
+      $message['body'][] = t('Hi Haley,');
+      $message['body'][] = t('You have a new \'Contact us\' submission.');
+      $message['body'][] = t('View it !here', array('!here' => l(t('here'),$base_url.'/admin/structure/entityform_types/manage/contact_us/submissions')));
+      break;
+    case 'talent_booking':
+      $message['subject'] = 'Unorthodox - New \'Talent Booking\' Submission';
+      $message['body'][] = t('Hi Haley,');
+      $message['body'][] = t('You have a new \'Talent Booking\' submission.');
+      $message['body'][] = t('View it !here', array('!here' => l(t('here'),$base_url.'/admin/structure/entityform_types/manage/talent_booking/submissions')));
+      break;
+    case 'join_unrthdx':
+      $message['subject'] = 'Unorthodox - New \'Join Unrthdx\' Submission';
+      $message['body'][] = t('Hi Haley,');
+      $message['body'][] = t('You have a new \'Join Unrthdx\' submission.');
+      $message['body'][] = t('View it !here', array('!here' => l(t('here'),$base_url.'/admin/structure/entityform_types/manage/join_unrthdx/submissions')));
+      break;
+  }
+}
