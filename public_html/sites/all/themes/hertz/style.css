@@ -124,6 +124,7 @@ i { font-style: italic; }
 	background: #2f3238;
 	border: 1px solid #505259;
 }
+.view-talent-presenters table td,
 .view-guys table td,
 .view-girls table td,
 .view-actors table td,
@@ -132,6 +133,7 @@ i { font-style: italic; }
 .view-portfolio table td{
     border:0 !important;
 }
+.view-talent-presenters ul,
 .view-guys ul,
 .view-girls ul,
 .view-actors ul,
@@ -140,6 +142,7 @@ i { font-style: italic; }
 .view-portfolio ul{
     padding:0 !important;
 }
+.view-talent-presenters a span:hover,
 .view-guys a span:hover,
 .view-girls a span:hover,
 .view-actors a span:hover,
@@ -148,6 +151,7 @@ i { font-style: italic; }
 .view-portfolio a span:hover{
     background: #aaa8a8;
 }
+.view-talent-presenters a span.model-name,
 .view-guys a span.model-name,
 .view-girls a span.model-name,
 .view-actors a span.model-name,
@@ -157,6 +161,7 @@ i { font-style: italic; }
     display: block;
     padding: 0 0 0 38%;
 }
+.view-talent-presenters a .model-name-wrapper,
 .view-guys a .model-name-wrapper,
 .view-girls a .model-name-wrapper,
 .view-actors a .model-name-wrapper,
@@ -171,6 +176,7 @@ i { font-style: italic; }
     font-weight: bold;
 }
 
+.view-talent-presenters ul li,
 .view-guys ul li,
 .view-girls ul li,
 .view-actors ul li,
