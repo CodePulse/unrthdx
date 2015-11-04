@@ -64,6 +64,8 @@
   <div class="homepage-content-header">
     <h1>UNRTHDX.COM</h1>
     <p>Model & Talent Management Agency</p>
+    <span>Unorthodox is a Model & Talent Management Agency that specialises in creating opportunities for the more unique & eccentric individual.</span>
+    <span>Unorthodox Model & Talent Agency comprises of a variety of individuals in the creative fields; Models,Dancers, Actors, TV Personalities, MUA’s, Photographers & Musicians</span>
   </div>
 
   <div class="three-blocks">

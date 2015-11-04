@@ -113,10 +113,15 @@ i { font-style: italic; }
 .homepage-content-header h1 {
     letter-spacing:5px;
 }
+.homepage-content-header span{
+	display:block;
+	margin-bottom:10px;
+}
 .homepage-content-header p{
     font-size: 30px;
     color: #818181;
     font-family: "Open Sans Condensed",sans-serif;
+	margin:0;
 }
 #main .content  th{
 	font-weight: bold;
