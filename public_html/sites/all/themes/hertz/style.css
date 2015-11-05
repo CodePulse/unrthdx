@@ -797,6 +797,8 @@ ul.pager .pager-current {
 
 .image_reel img {
 	float: left;
+	max-width: 943px;
+	min-width: 900px;
 }
 
 .paging { 
