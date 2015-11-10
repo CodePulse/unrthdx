@@ -829,6 +829,7 @@ ul.pager .pager-current {
 	border: none; 
 	outline: none;
 }
+
 .slidertitle{
 	background: #fff;
 	display: none; 
@@ -842,8 +843,15 @@ ul.pager .pager-current {
 	padding: 10px;
 	margin-bottom: 14px;
 }
-
-.slidertext { 
+.slidertext:nth-child(1),
+.slidertitle:nth-child(1){
+	left:463px
+}
+.slidertext:nth-child(1),
+.slidertitle:nth-child(1){
+	left:663px
+}
+.slidertext {
 	background: #e7e5e5;
 	display: none; 
 	position: absolute; 
