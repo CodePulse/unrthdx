@@ -196,6 +196,10 @@ i { font-style: italic; }
 .view-latest-content .views-field-body p{
 	font-size:1em;
 }
+.featured-content .view-latest-content .views-field-title,
+.featured-content .view-latest-content .views-field-nothing {
+	text-align: center;
+}
 .view-latest-content .views-field-nothing {
 	font-style: italic;
 }
@@ -205,6 +209,7 @@ i { font-style: italic; }
 }
 .latest-content-blocks > div {
 	width:48%;
+	display: inline-block;
 }
 #main .content table td{
 	border: 1px solid #505259;
