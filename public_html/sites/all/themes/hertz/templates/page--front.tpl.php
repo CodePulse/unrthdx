@@ -68,11 +68,10 @@
     <span>Unorthodox Model & Talent Agency comprises of a variety of individuals in the creative fields; Models,Dancers, Actors, TV Personalities, MUA’s, Photographers & Musicians</span>
   </div>
 
-  <div class="three-blocks">
-    <a href="/artist/girls"><div class="block-one"><span>Girls</span></div></a>
-    <a href="/artist/guys"><div class="block-two"><span>Guys</span></div></a>
-   <a href="/press-media"><div class="block-three"><span>News</span></div></a>
-  </div>
+  <div class="latest-content-blocks">
+		<div class="latest-news"><?php print render($page['latest_content']); ?></div>
+		<div class="featured-content"><?php print render($page['featured_content']); ?></div>
+	</div>
 	<div class="clear"></div>
 		<?php if ($page['homepage_content']): ?><!-- / start homepage content block -->
 		<div class="full">

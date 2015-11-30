@@ -190,38 +190,22 @@ i { font-style: italic; }
 .view-portfolio ul li{
     list-style:none;
 }
-.three-blocks div span {
-    position: absolute;
-    background: transparent linear-gradient(320deg, transparent 0%, #FFF 100%) repeat scroll 0% 0%;
-    width: 200px;
-    font-size: 2em;
-    padding-left: 20px;
-    top: 200px;
-    bottom: 41px;
-    font-family: 'Yanone Kaffeesatz', sans-serif;
-    color: #000;
+.latest-content-blocks a {
+	font-size:1.4em;
 }
-.three-blocks div.block-one {
-background:url(/sites/all/themes/hertz/images/11-330x330.jpg) no-repeat;
-    position:relative;
+.view-latest-content .views-field-body p{
+	font-size:1em;
 }
-.three-blocks div.block-two {
-    background:url(/sites/all/themes/hertz/images/hm-david-beckham-modern-essentials-spring-2015-0.jpg) no-repeat 0px 0px / 508px auto;
-position:relative;
-
+.view-latest-content .views-field-nothing {
+	font-style: italic;
 }
-.three-blocks div.block-three {
-    background:url(/sites/all/themes/hertz/images/image-480x464.jpg) no-repeat 0px -3px / 320px;
-    position:relative;
-
+.latest-content-blocks a:hover {
+	color:#fff;
+	text-decoration: underline;
 }
-.three-blocks div {
-    width: 300px;
-    height: 300px;
-    display: inline-block;
-    margin-right: 10px;
+.latest-content-blocks > div {
+	width:48%;
 }
-
 #main .content table td{
 	border: 1px solid #505259;
 	padding: 5px;

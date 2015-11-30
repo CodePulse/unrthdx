@@ -30,6 +30,8 @@ regions[homepage_one]     = Homepage Block One
 regions[homepage_two]     = Homepage Block Two
 regions[homepage_three]   = Homepage Block Three
 regions[homepage_content] = Homepage Content
+regions[latest_content] = Latest Content
+regions[featured_content] = Featured Content
 
 
 ; Default Settings
