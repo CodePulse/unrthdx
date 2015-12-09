@@ -429,7 +429,7 @@ function codepulse_context_context_default_contexts() {
   $context->conditions = array(
     'node' => array(
       'values' => array(
-        'talents_presenters' => 'talents_presenters',
+        'talent' => 'talent',
       ),
       'options' => array(
         'node_form' => '0',
@@ -439,11 +439,11 @@ function codepulse_context_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
-        'views-talent_presenters-block_1' => array(
+        'views-portfolio-block_1' => array(
           'module' => 'views',
-          'delta' => 'talent_presenters-block_1',
+          'delta' => 'portfolio-block_1',
           'region' => 'content',
-          'weight' => '8',
+          'weight' => '9',
         ),
       ),
     ),

@@ -39,7 +39,7 @@ function codepulse_views_views_default_views() {
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  /* Field: Content: Actors & Actresses pictures */
+  /* Field: Content: Pictures */
   $handler->display->display_options['fields']['field_model_image']['id'] = 'field_model_image';
   $handler->display->display_options['fields']['field_model_image']['table'] = 'field_data_field_model_image';
   $handler->display->display_options['fields']['field_model_image']['field'] = 'field_model_image';
@@ -79,8 +79,18 @@ function codepulse_views_views_default_views() {
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
   $handler->display->display_options['filters']['type']['value'] = array(
-    'actors_actresses' => 'actors_actresses',
+    'talent' => 'talent',
   );
+  /* Filter criterion: Content: Talent type (field_talent_type) */
+  $handler->display->display_options['filters']['field_talent_type_tid']['id'] = 'field_talent_type_tid';
+  $handler->display->display_options['filters']['field_talent_type_tid']['table'] = 'field_data_field_talent_type';
+  $handler->display->display_options['filters']['field_talent_type_tid']['field'] = 'field_talent_type_tid';
+  $handler->display->display_options['filters']['field_talent_type_tid']['value'] = array(
+    4 => '4',
+  );
+  $handler->display->display_options['filters']['field_talent_type_tid']['type'] = 'select';
+  $handler->display->display_options['filters']['field_talent_type_tid']['vocabulary'] = 'talent_type';
+  $handler->display->display_options['filters']['field_talent_type_tid']['hierarchy'] = 1;
 
   /* Display: Actors-actresses block */
   $handler = $view->new_display('block', 'Actors-actresses block', 'block');
@@ -96,7 +106,7 @@ function codepulse_views_views_default_views() {
   $handler->display->display_options['row_plugin'] = 'fields';
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Content: Actors & Actresses pictures */
+  /* Field: Content: Pictures */
   $handler->display->display_options['fields']['field_model_image']['id'] = 'field_model_image';
   $handler->display->display_options['fields']['field_model_image']['table'] = 'field_data_field_model_image';
   $handler->display->display_options['fields']['field_model_image']['field'] = 'field_model_image';
@@ -139,7 +149,7 @@ function codepulse_views_views_default_views() {
   $handler->display->display_options['row_plugin'] = 'fields';
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Content: Actors & Actresses pictures */
+  /* Field: Content: Pictures */
   $handler->display->display_options['fields']['field_model_image']['id'] = 'field_model_image';
   $handler->display->display_options['fields']['field_model_image']['table'] = 'field_data_field_model_image';
   $handler->display->display_options['fields']['field_model_image']['field'] = 'field_model_image';
@@ -183,6 +193,10 @@ function codepulse_views_views_default_views() {
   $handler->display->display_options['pager']['options']['items_per_page'] = '5';
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['row_plugin'] = 'fields';
+  /* Relationship: Content: Talent type (field_talent_type) */
+  $handler->display->display_options['relationships']['field_talent_type_tid']['id'] = 'field_talent_type_tid';
+  $handler->display->display_options['relationships']['field_talent_type_tid']['table'] = 'field_data_field_talent_type';
+  $handler->display->display_options['relationships']['field_talent_type_tid']['field'] = 'field_talent_type_tid';
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
@@ -190,7 +204,7 @@ function codepulse_views_views_default_views() {
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  /* Field: Content: Actors & Actresses pictures */
+  /* Field: Content: Pictures */
   $handler->display->display_options['fields']['field_model_image']['id'] = 'field_model_image';
   $handler->display->display_options['fields']['field_model_image']['table'] = 'field_data_field_model_image';
   $handler->display->display_options['fields']['field_model_image']['field'] = 'field_model_image';
@@ -230,8 +244,18 @@ function codepulse_views_views_default_views() {
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
   $handler->display->display_options['filters']['type']['value'] = array(
-    'dancers' => 'dancers',
+    'talent' => 'talent',
   );
+  /* Filter criterion: Content: Talent type (field_talent_type) */
+  $handler->display->display_options['filters']['field_talent_type_tid']['id'] = 'field_talent_type_tid';
+  $handler->display->display_options['filters']['field_talent_type_tid']['table'] = 'field_data_field_talent_type';
+  $handler->display->display_options['filters']['field_talent_type_tid']['field'] = 'field_talent_type_tid';
+  $handler->display->display_options['filters']['field_talent_type_tid']['value'] = array(
+    5 => '5',
+  );
+  $handler->display->display_options['filters']['field_talent_type_tid']['type'] = 'select';
+  $handler->display->display_options['filters']['field_talent_type_tid']['vocabulary'] = 'talent_type';
+  $handler->display->display_options['filters']['field_talent_type_tid']['hierarchy'] = 1;
 
   /* Display: Dancers block */
   $handler = $view->new_display('block', 'Dancers block', 'block');
@@ -247,7 +271,7 @@ function codepulse_views_views_default_views() {
   $handler->display->display_options['row_plugin'] = 'fields';
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Content: Actors & Actresses pictures */
+  /* Field: Content: Pictures */
   $handler->display->display_options['fields']['field_model_image']['id'] = 'field_model_image';
   $handler->display->display_options['fields']['field_model_image']['table'] = 'field_data_field_model_image';
   $handler->display->display_options['fields']['field_model_image']['field'] = 'field_model_image';
@@ -290,7 +314,7 @@ function codepulse_views_views_default_views() {
   $handler->display->display_options['row_plugin'] = 'fields';
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Content: Actors & Actresses pictures */
+  /* Field: Content: Pictures */
   $handler->display->display_options['fields']['field_model_image']['id'] = 'field_model_image';
   $handler->display->display_options['fields']['field_model_image']['table'] = 'field_data_field_model_image';
   $handler->display->display_options['fields']['field_model_image']['field'] = 'field_model_image';
@@ -341,7 +365,7 @@ function codepulse_views_views_default_views() {
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  /* Field: Content: Actors & Actresses pictures */
+  /* Field: Content: Pictures */
   $handler->display->display_options['fields']['field_model_image']['id'] = 'field_model_image';
   $handler->display->display_options['fields']['field_model_image']['table'] = 'field_data_field_model_image';
   $handler->display->display_options['fields']['field_model_image']['field'] = 'field_model_image';
@@ -408,7 +432,7 @@ function codepulse_views_views_default_views() {
   $handler->display->display_options['row_plugin'] = 'fields';
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Content: Actors & Actresses pictures */
+  /* Field: Content: Pictures */
   $handler->display->display_options['fields']['field_model_image']['id'] = 'field_model_image';
   $handler->display->display_options['fields']['field_model_image']['table'] = 'field_data_field_model_image';
   $handler->display->display_options['fields']['field_model_image']['field'] = 'field_model_image';
@@ -448,7 +472,7 @@ function codepulse_views_views_default_views() {
   $handler->display->display_options['row_plugin'] = 'fields';
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Content: Actors & Actresses pictures */
+  /* Field: Content: Pictures */
   $handler->display->display_options['fields']['field_model_image']['id'] = 'field_model_image';
   $handler->display->display_options['fields']['field_model_image']['table'] = 'field_data_field_model_image';
   $handler->display->display_options['fields']['field_model_image']['field'] = 'field_model_image';
@@ -499,7 +523,7 @@ function codepulse_views_views_default_views() {
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  /* Field: Content: Actors & Actresses pictures */
+  /* Field: Content: Pictures */
   $handler->display->display_options['fields']['field_model_image']['id'] = 'field_model_image';
   $handler->display->display_options['fields']['field_model_image']['table'] = 'field_data_field_model_image';
   $handler->display->display_options['fields']['field_model_image']['field'] = 'field_model_image';
@@ -566,7 +590,7 @@ function codepulse_views_views_default_views() {
   $handler->display->display_options['row_plugin'] = 'fields';
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Content: Actors & Actresses pictures */
+  /* Field: Content: Pictures */
   $handler->display->display_options['fields']['field_model_image']['id'] = 'field_model_image';
   $handler->display->display_options['fields']['field_model_image']['table'] = 'field_data_field_model_image';
   $handler->display->display_options['fields']['field_model_image']['field'] = 'field_model_image';
@@ -606,7 +630,7 @@ function codepulse_views_views_default_views() {
   $handler->display->display_options['row_plugin'] = 'fields';
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Content: Actors & Actresses pictures */
+  /* Field: Content: Pictures */
   $handler->display->display_options['fields']['field_model_image']['id'] = 'field_model_image';
   $handler->display->display_options['fields']['field_model_image']['table'] = 'field_data_field_model_image';
   $handler->display->display_options['fields']['field_model_image']['field'] = 'field_model_image';
@@ -831,6 +855,10 @@ function codepulse_views_views_default_views() {
   $handler->display->display_options['pager']['options']['items_per_page'] = '5';
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['row_plugin'] = 'fields';
+  /* Relationship: Content: Talent type (field_talent_type) */
+  $handler->display->display_options['relationships']['field_talent_type_tid']['id'] = 'field_talent_type_tid';
+  $handler->display->display_options['relationships']['field_talent_type_tid']['table'] = 'field_data_field_talent_type';
+  $handler->display->display_options['relationships']['field_talent_type_tid']['field'] = 'field_talent_type_tid';
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
@@ -838,7 +866,7 @@ function codepulse_views_views_default_views() {
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  /* Field: Content: Actors & Actresses pictures */
+  /* Field: Content: Pictures */
   $handler->display->display_options['fields']['field_model_image']['id'] = 'field_model_image';
   $handler->display->display_options['fields']['field_model_image']['table'] = 'field_data_field_model_image';
   $handler->display->display_options['fields']['field_model_image']['field'] = 'field_model_image';
@@ -878,8 +906,18 @@ function codepulse_views_views_default_views() {
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
   $handler->display->display_options['filters']['type']['value'] = array(
-    'models' => 'models',
+    'talent' => 'talent',
   );
+  /* Filter criterion: Content: Talent type (field_talent_type) */
+  $handler->display->display_options['filters']['field_talent_type_tid']['id'] = 'field_talent_type_tid';
+  $handler->display->display_options['filters']['field_talent_type_tid']['table'] = 'field_data_field_talent_type';
+  $handler->display->display_options['filters']['field_talent_type_tid']['field'] = 'field_talent_type_tid';
+  $handler->display->display_options['filters']['field_talent_type_tid']['value'] = array(
+    6 => '6',
+  );
+  $handler->display->display_options['filters']['field_talent_type_tid']['type'] = 'select';
+  $handler->display->display_options['filters']['field_talent_type_tid']['vocabulary'] = 'talent_type';
+  $handler->display->display_options['filters']['field_talent_type_tid']['hierarchy'] = 1;
 
   /* Display: Models block */
   $handler = $view->new_display('block', 'Models block', 'block');
@@ -895,7 +933,7 @@ function codepulse_views_views_default_views() {
   $handler->display->display_options['row_plugin'] = 'fields';
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Content: Actors & Actresses pictures */
+  /* Field: Content: Pictures */
   $handler->display->display_options['fields']['field_model_image']['id'] = 'field_model_image';
   $handler->display->display_options['fields']['field_model_image']['table'] = 'field_data_field_model_image';
   $handler->display->display_options['fields']['field_model_image']['field'] = 'field_model_image';
@@ -938,7 +976,7 @@ function codepulse_views_views_default_views() {
   $handler->display->display_options['row_plugin'] = 'fields';
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Content: Actors & Actresses pictures */
+  /* Field: Content: Pictures */
   $handler->display->display_options['fields']['field_model_image']['id'] = 'field_model_image';
   $handler->display->display_options['fields']['field_model_image']['table'] = 'field_data_field_model_image';
   $handler->display->display_options['fields']['field_model_image']['field'] = 'field_model_image';
@@ -1135,7 +1173,7 @@ function codepulse_views_views_default_views() {
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  /* Field: Content: Actors & Actresses pictures */
+  /* Field: Content: Pictures */
   $handler->display->display_options['fields']['field_model_image']['id'] = 'field_model_image';
   $handler->display->display_options['fields']['field_model_image']['table'] = 'field_data_field_model_image';
   $handler->display->display_options['fields']['field_model_image']['field'] = 'field_model_image';
@@ -1175,10 +1213,7 @@ function codepulse_views_views_default_views() {
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
   $handler->display->display_options['filters']['type']['value'] = array(
-    'actors_actresses' => 'actors_actresses',
-    'dancers' => 'dancers',
-    'models' => 'models',
-    'talents_presenters' => 'talents_presenters',
+    'talent' => 'talent',
   );
 
   /* Display: Block */
@@ -1194,7 +1229,7 @@ function codepulse_views_views_default_views() {
   $handler->display->display_options['row_plugin'] = 'fields';
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Content: Actors & Actresses pictures */
+  /* Field: Content: Pictures */
   $handler->display->display_options['fields']['field_model_image']['id'] = 'field_model_image';
   $handler->display->display_options['fields']['field_model_image']['table'] = 'field_data_field_model_image';
   $handler->display->display_options['fields']['field_model_image']['field'] = 'field_model_image';
@@ -1237,7 +1272,7 @@ function codepulse_views_views_default_views() {
   $handler->display->display_options['row_plugin'] = 'fields';
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Content: Actors & Actresses pictures */
+  /* Field: Content: Pictures */
   $handler->display->display_options['fields']['field_model_image']['id'] = 'field_model_image';
   $handler->display->display_options['fields']['field_model_image']['table'] = 'field_data_field_model_image';
   $handler->display->display_options['fields']['field_model_image']['field'] = 'field_model_image';
@@ -1281,6 +1316,10 @@ function codepulse_views_views_default_views() {
   $handler->display->display_options['pager']['options']['items_per_page'] = '5';
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['row_plugin'] = 'fields';
+  /* Relationship: Content: Talent type (field_talent_type) */
+  $handler->display->display_options['relationships']['field_talent_type_tid']['id'] = 'field_talent_type_tid';
+  $handler->display->display_options['relationships']['field_talent_type_tid']['table'] = 'field_data_field_talent_type';
+  $handler->display->display_options['relationships']['field_talent_type_tid']['field'] = 'field_talent_type_tid';
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
@@ -1288,7 +1327,7 @@ function codepulse_views_views_default_views() {
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  /* Field: Content: Actors & Actresses pictures */
+  /* Field: Content: Pictures */
   $handler->display->display_options['fields']['field_model_image']['id'] = 'field_model_image';
   $handler->display->display_options['fields']['field_model_image']['table'] = 'field_data_field_model_image';
   $handler->display->display_options['fields']['field_model_image']['field'] = 'field_model_image';
@@ -1328,8 +1367,18 @@ function codepulse_views_views_default_views() {
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
   $handler->display->display_options['filters']['type']['value'] = array(
-    'talents_presenters' => 'talents_presenters',
+    'talent' => 'talent',
   );
+  /* Filter criterion: Content: Talent type (field_talent_type) */
+  $handler->display->display_options['filters']['field_talent_type_tid']['id'] = 'field_talent_type_tid';
+  $handler->display->display_options['filters']['field_talent_type_tid']['table'] = 'field_data_field_talent_type';
+  $handler->display->display_options['filters']['field_talent_type_tid']['field'] = 'field_talent_type_tid';
+  $handler->display->display_options['filters']['field_talent_type_tid']['value'] = array(
+    7 => '7',
+  );
+  $handler->display->display_options['filters']['field_talent_type_tid']['type'] = 'select';
+  $handler->display->display_options['filters']['field_talent_type_tid']['vocabulary'] = 'talent_type';
+  $handler->display->display_options['filters']['field_talent_type_tid']['hierarchy'] = 1;
 
   /* Display: Talent/Presenters block */
   $handler = $view->new_display('block', 'Talent/Presenters block', 'block');
@@ -1345,7 +1394,7 @@ function codepulse_views_views_default_views() {
   $handler->display->display_options['row_plugin'] = 'fields';
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Content: Actors & Actresses pictures */
+  /* Field: Content: Pictures */
   $handler->display->display_options['fields']['field_model_image']['id'] = 'field_model_image';
   $handler->display->display_options['fields']['field_model_image']['table'] = 'field_data_field_model_image';
   $handler->display->display_options['fields']['field_model_image']['field'] = 'field_model_image';
@@ -1388,7 +1437,7 @@ function codepulse_views_views_default_views() {
   $handler->display->display_options['row_plugin'] = 'fields';
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Content: Actors & Actresses pictures */
+  /* Field: Content: Pictures */
   $handler->display->display_options['fields']['field_model_image']['id'] = 'field_model_image';
   $handler->display->display_options['fields']['field_model_image']['table'] = 'field_data_field_model_image';
   $handler->display->display_options['fields']['field_model_image']['field'] = 'field_model_image';

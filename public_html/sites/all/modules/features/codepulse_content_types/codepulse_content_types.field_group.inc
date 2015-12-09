@@ -56,9 +56,15 @@ function codepulse_content_types_field_group_info() {
     'children' => array(
       0 => 'body',
       1 => 'field_gender',
-      2 => 'title',
-      3 => 'path',
-      4 => 'field_model_image',
+      2 => 'field_model_image',
+      3 => 'field_bust',
+      4 => 'field_chest',
+      5 => 'field_waist',
+      6 => 'field_hips',
+      7 => 'field_shoes',
+      8 => 'field_height',
+      9 => 'title',
+      10 => 'path',
     ),
     'format_type' => 'tab',
     'format_settings' => array(
@@ -88,7 +94,13 @@ function codepulse_content_types_field_group_info() {
       0 => 'body',
       1 => 'field_model_image',
       2 => 'field_gender',
-      3 => 'title',
+      3 => 'field_height',
+      4 => 'field_waist',
+      5 => 'field_hips',
+      6 => 'field_chest',
+      7 => 'field_bust',
+      8 => 'field_shoes',
+      9 => 'title',
     ),
     'format_type' => 'tab',
     'format_settings' => array(
@@ -161,6 +173,44 @@ function codepulse_content_types_field_group_info() {
     ),
   );
   $export['group_page|node|page|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_talent_details|node|talent|form';
+  $field_group->group_name = 'group_talent_details';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'talent';
+  $field_group->mode = 'form';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'Talent details',
+    'weight' => '0',
+    'children' => array(
+      0 => 'body',
+      1 => 'field_gender',
+      2 => 'field_model_image',
+      3 => 'field_height',
+      4 => 'field_waist',
+      5 => 'field_hips',
+      6 => 'field_chest',
+      7 => 'field_bust',
+      8 => 'field_shoes',
+      9 => 'title',
+      10 => 'path',
+      11 => 'field_talent_type',
+    ),
+    'format_type' => 'tab',
+    'format_settings' => array(
+      'formatter' => 'closed',
+      'instance_settings' => array(
+        'description' => '',
+        'classes' => 'group-talent-details field-group-tab',
+        'required_fields' => 1,
+      ),
+    ),
+  );
+  $export['group_talent_details|node|talent|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
