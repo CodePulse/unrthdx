@@ -86,7 +86,7 @@ function codepulse_views_views_default_views() {
   $handler->display->display_options['filters']['field_talent_type_tid']['table'] = 'field_data_field_talent_type';
   $handler->display->display_options['filters']['field_talent_type_tid']['field'] = 'field_talent_type_tid';
   $handler->display->display_options['filters']['field_talent_type_tid']['value'] = array(
-    4 => '4',
+    7 => '7',
   );
   $handler->display->display_options['filters']['field_talent_type_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_talent_type_tid']['vocabulary'] = 'talent_type';
@@ -251,7 +251,7 @@ function codepulse_views_views_default_views() {
   $handler->display->display_options['filters']['field_talent_type_tid']['table'] = 'field_data_field_talent_type';
   $handler->display->display_options['filters']['field_talent_type_tid']['field'] = 'field_talent_type_tid';
   $handler->display->display_options['filters']['field_talent_type_tid']['value'] = array(
-    5 => '5',
+    4 => '4',
   );
   $handler->display->display_options['filters']['field_talent_type_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_talent_type_tid']['vocabulary'] = 'talent_type';
@@ -913,7 +913,7 @@ function codepulse_views_views_default_views() {
   $handler->display->display_options['filters']['field_talent_type_tid']['table'] = 'field_data_field_talent_type';
   $handler->display->display_options['filters']['field_talent_type_tid']['field'] = 'field_talent_type_tid';
   $handler->display->display_options['filters']['field_talent_type_tid']['value'] = array(
-    6 => '6',
+    5 => '5',
   );
   $handler->display->display_options['filters']['field_talent_type_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_talent_type_tid']['vocabulary'] = 'talent_type';
@@ -1374,7 +1374,7 @@ function codepulse_views_views_default_views() {
   $handler->display->display_options['filters']['field_talent_type_tid']['table'] = 'field_data_field_talent_type';
   $handler->display->display_options['filters']['field_talent_type_tid']['field'] = 'field_talent_type_tid';
   $handler->display->display_options['filters']['field_talent_type_tid']['value'] = array(
-    7 => '7',
+    6 => '6',
   );
   $handler->display->display_options['filters']['field_talent_type_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_talent_type_tid']['vocabulary'] = 'talent_type';

@@ -380,11 +380,11 @@ function codepulse_context_context_default_contexts() {
           'region' => 'footer_two',
           'weight' => '-10',
         ),
-        'block-2' => array(
-          'module' => 'block',
-          'delta' => '2',
+        'views-tweets-block' => array(
+          'module' => 'views',
+          'delta' => 'tweets-block',
           'region' => 'footer_three',
-          'weight' => '-10',
+          'weight' => '-9',
         ),
       ),
     ),

@@ -10,22 +10,16 @@
 				<img src="<?php echo theme_get_setting('slider_one_image'); ?>" />
 				<img src="<?php echo theme_get_setting('slider_two_image'); ?>" />
 				<img src="<?php echo theme_get_setting('slider_three_image'); ?>" />
+				<img src="<?php echo theme_get_setting('slider_four_image'); ?>" />
+				<img src="<?php echo theme_get_setting('slider_five_image'); ?>" />
 			</div>
-			<div class="slider-title">
-				<div class="slidertitle"><?php echo theme_get_setting('slider_one_title'); ?></div>
-				<div class="slidertitle"><?php echo theme_get_setting('slider_two_title'); ?></div>
-				<div class="slidertitle"><?php echo theme_get_setting('slider_three_title'); ?></div>
-			</div>
-			<div class="slider-text">
-				<div class="slidertext" style="display: none;"><?php echo theme_get_setting('slider_one_desc'); ?></div>
-				<div class="slidertext" style="display: none;"><?php echo theme_get_setting('slider_two_desc'); ?></div>
-				<div class="slidertext" style="display: none;"><?php echo theme_get_setting('slider_three_desc'); ?></div>
-			</div>
-		</div>        
+		</div>
 		<div class="paging">
 			<a rel="1" href="#">1</a>
 			<a rel="2" href="#">2</a>
 			<a rel="3" href="#">3</a>
+			<a rel="4" href="#">4</a>
+			<a rel="5" href="#">5</a>
 		</div>
 	</div>
 </div> <!-- end slider -->

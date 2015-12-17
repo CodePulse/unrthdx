@@ -58,35 +58,11 @@ function hertz_form_system_theme_settings_alter(&$form, &$form_state) {
     '#default_value' => theme_get_setting('slider_one_image'),
 	'#description'   => t("Enter the url of first slider image."),
   );
-  $form['hertz_settings']['homepage_slider']['slider_one_title'] = array(
-    '#type' => 'textfield',
-    '#title' => t('Title of Slider One'),
-    '#default_value' => theme_get_setting('slider_one_title'),
-	'#description'   => t("Enter the title of first slider."),
-  );
-  $form['hertz_settings']['homepage_slider']['slider_one_desc'] = array(
-    '#type' => 'textfield',
-    '#title' => t('Description of Slider One'),
-    '#default_value' => theme_get_setting('slider_one_desc'),
-	'#description'   => t("Enter the description of first slider."),
-  );
   $form['hertz_settings']['homepage_slider']['slider_two_image'] = array(
     '#type' => 'textfield',
     '#title' => t('Image of Slider two'),
     '#default_value' => theme_get_setting('slider_two_image'),
 	'#description'   => t("Enter the url of second slider image."),
-  );
-  $form['hertz_settings']['homepage_slider']['slider_two_title'] = array(
-    '#type' => 'textfield',
-    '#title' => t('Title of Slider two'),
-    '#default_value' => theme_get_setting('slider_two_title'),
-	'#description'   => t("Enter the title of second slider."),
-  );
-  $form['hertz_settings']['homepage_slider']['slider_two_desc'] = array(
-    '#type' => 'textfield',
-    '#title' => t('Description of Slider two'),
-    '#default_value' => theme_get_setting('slider_two_desc'),
-	'#description'   => t("Enter the description of second slider."),
   );
   $form['hertz_settings']['homepage_slider']['slider_three_image'] = array(
     '#type' => 'textfield',
@@ -94,17 +70,17 @@ function hertz_form_system_theme_settings_alter(&$form, &$form_state) {
     '#default_value' => theme_get_setting('slider_three_image'),
 	'#description'   => t("Enter the url of third slider image."),
   );
-  $form['hertz_settings']['homepage_slider']['slider_three_title'] = array(
+  $form['hertz_settings']['homepage_slider']['slider_four_image'] = array(
     '#type' => 'textfield',
-    '#title' => t('Title of Slider three'),
-    '#default_value' => theme_get_setting('slider_three_title'),
-	'#description'   => t("Enter the title of third slider."),
+    '#title' => t('Image of Slider Four'),
+    '#default_value' => theme_get_setting('slider_four_image'),
+	'#description'   => t("Enter the url of fourth slider image."),
   );
-  $form['hertz_settings']['homepage_slider']['slider_three_desc'] = array(
+  $form['hertz_settings']['homepage_slider']['slider_five_image'] = array(
     '#type' => 'textfield',
-    '#title' => t('Description of Slider three'),
-    '#default_value' => theme_get_setting('slider_three_desc'),
-	'#description'   => t("Enter the description of third slider."),
+    '#title' => t('Image of Slider Five'),
+    '#default_value' => theme_get_setting('slider_five_image'),
+	'#description'   => t("Enter the url of fifth slider image."),
   );
   $form['hertz_settings']['breadcrumb'] = array(
     '#type' => 'fieldset',
