@@ -1,6 +1,53 @@
 # Ignore configuration files that may contain sensitive information.
-sites/*/settings*.php
+public_html/sites/*/*settings.php
+public_html/sites/default/files.tgz
+public_html/sites/default/private-files.tgz
+public_html/sites/default/files
 
 # Ignore paths that contain user-generated content.
-sites/*/files
-sites/*/private
+public_html/*files/
+public_html/sites/*/files
+public_html/sites/*/private
+public_html/sites/*/files.tgz
+
+# microsite symlinks
+public_html/creativity
+public_html/leadership
+public_html/outperformance
+public_html/purpose
+
+/.settings
+/.buildpath
+/.project
+/.idea
+
+public_html/modules/simpletest/files
+logs
+
+iip.esproj/*
+
+# TEMP IGNORES
+#sites/all/modules/custom/iip/itool/itool.inc
+*.DS_Store
+
+public_html/sites/all/libraries/simplehtmldom/
+public_html/sites/all/modules/contrib/devel_themer/
+public_html/sites/all/modules/contrib/simplehtmldom/
+public_html/sites/all/modules/contrib/stage_file_proxy/
+
+# Composer ignores
+composer.lock
+composer.phar
+
+# SASS ignores
+.sass-cache
+.sass-cache/*
+*.css.map
+
+*.DS_Store
+
+# Vagrant, Ansible
+vlad/.vagrant*
+vlad_aux*
+settings/vlad_custom_settings.yml
+settings/vlad_settings.yml
