@@ -467,12 +467,17 @@ function codepulse_content_types_field_default_field_instances() {
     ),
     'widget' => array(
       'active' => 1,
-      'module' => 'multiupload_imagefield_widget',
+      'module' => 'imagefield_crop',
       'settings' => array(
+        'collapsible' => 2,
+        'croparea' => '305x0',
+        'enforce_minimum' => 1,
+        'enforce_ratio' => 1,
         'preview_image_style' => 'thumbnail',
         'progress_indicator' => 'throbber',
+        'resolution' => '305x240',
       ),
-      'type' => 'image_miw',
+      'type' => 'imagefield_crop_widget',
       'weight' => 5,
     ),
   );

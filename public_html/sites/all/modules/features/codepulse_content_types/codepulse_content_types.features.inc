@@ -14,6 +14,9 @@ function codepulse_content_types_ctools_plugin_api($module = NULL, $api = NULL) 
   if ($module == "node_convert" && $api == "node_convert") {
     return array("version" => "1");
   }
+  if ($module == "strongarm" && $api == "strongarm") {
+    return array("version" => "1");
+  }
 }
 
 /**
