@@ -49,3 +49,11 @@ function unrthdx_custom_mail($key, &$message, $params) {
       break;
   }
 }
+
+function unrthdx_custom_form_alter(&$form, &$form_state, $form_id) {
+  if (arg(2) == 'talent') {
+    $path = drupal_get_path('theme', 'hertz');
+    $form['#attached']['css'][] = $path . '/style.css';
+    $form['#attached']['js'][] = $path . '/js/custom.js';
+  }
+}

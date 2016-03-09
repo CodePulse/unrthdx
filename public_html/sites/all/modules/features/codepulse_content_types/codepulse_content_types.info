@@ -62,6 +62,7 @@ features[variable][] = comment_form_location_talent
 features[variable][] = comment_preview_talent
 features[variable][] = comment_subject_field_talent
 features[variable][] = comment_talent
+features[variable][] = field_bundle_settings_node__talent
 features[variable][] = menu_options_talent
 features[variable][] = menu_parent_talent
 features[variable][] = node_options_talent

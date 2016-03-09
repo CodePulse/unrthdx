@@ -232,7 +232,7 @@ function codepulse_content_types_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 3,
+      'weight' => -3,
     ),
   );
 
@@ -271,7 +271,7 @@ function codepulse_content_types_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 10,
+      'weight' => 4,
     ),
   );
 
@@ -311,7 +311,7 @@ function codepulse_content_types_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 9,
+      'weight' => 3,
     ),
   );
 
@@ -347,7 +347,7 @@ function codepulse_content_types_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 2,
+      'weight' => -4,
     ),
   );
 
@@ -387,7 +387,7 @@ function codepulse_content_types_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 6,
+      'weight' => 0,
     ),
   );
 
@@ -427,7 +427,7 @@ function codepulse_content_types_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 8,
+      'weight' => 2,
     ),
   );
 
@@ -478,7 +478,7 @@ function codepulse_content_types_field_default_field_instances() {
         'resolution' => '',
       ),
       'type' => 'imagefield_crop_widget',
-      'weight' => 5,
+      'weight' => -1,
     ),
   );
 
@@ -518,7 +518,7 @@ function codepulse_content_types_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 11,
+      'weight' => 5,
     ),
   );
 
@@ -554,7 +554,7 @@ function codepulse_content_types_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 4,
+      'weight' => -2,
     ),
   );
 
@@ -594,7 +594,7 @@ function codepulse_content_types_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 7,
+      'weight' => 1,
     ),
   );
 
