@@ -25,7 +25,7 @@ function codepulse_content_types_ctools_plugin_api($module = NULL, $api = NULL) 
 function codepulse_content_types_node_info() {
   $items = array(
     'talent' => array(
-      'name' => t('Talent'),
+      'name' => t('Portfolio'),
       'base' => 'node_content',
       'description' => '',
       'has_title' => '1',
